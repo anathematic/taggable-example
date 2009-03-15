@@ -22,3 +22,4 @@
 <%= link_to 'New cake', new_cake_path %>
 
 <h1>Tag Cloud</h1>
+<%= render(:partial => "cake_tags", :collection => @cake_tags) %>

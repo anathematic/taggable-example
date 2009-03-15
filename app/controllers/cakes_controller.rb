@@ -1,4 +1,7 @@
 class CakesController < ApplicationController
+  
+  before_filter :tags
+  
   # GET /cakes
   # GET /cakes.xml
   def index
@@ -81,5 +84,11 @@ class CakesController < ApplicationController
       format.html { redirect_to(cakes_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  private
+  
+  def tags
+    @cake_tags = Cake.tag_counts
   end
 end

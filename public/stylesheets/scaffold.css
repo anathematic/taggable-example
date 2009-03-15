@@ -52,3 +52,9 @@ a:hover { color: #fff; background-color:#000; }
   list-style: square;
 }
 
+/* tags css */
+.tag_level_1 { font-size: 12px; }
+.tag_level_2 { font-size: 14px; }
+.tag_level_3 { font-size: 16px; }
+.tag_level_4 { font-size: 18px; }
+.tag_level_5 { font-size: 20px; }

@@ -35,7 +35,7 @@ module ActiveRecord
               end
               
               def self.#{tag_type.singularize}_counts(options={})
-                tag_counts_on('#{tag_type}',options)
+                tag_counts_on('#{tag_type}', options)
               end
         
               def #{tag_type.singularize}_list
