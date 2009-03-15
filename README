@@ -1,1 +1,22 @@
-Lol project lol
+ActsAsTaggableOn Example
+================
+
+This is just a quick and dirty example of how to use acts_as_taggable_on plugin by mbleigh, since there's a problem with the tag_counts at the moment I figured I'd just write my own (basic) tag cloud system for it.
+
+Install / Usage
+================
+
+May need to update to edge Rails (using Rails 2.3.1 as of this writing)
+1. gem install rails --source http://gems.rubyonrails.org
+2. setup database.yml as needed (look at config/database.yml.example if you need help)
+3. rake db:create
+4. rake db:migrate
+
+If you would like some test data:
+rake dummy_data
+
+Contact Information
+================
+
+If you have any problems / feedback you can find me at:
+Anathematic (irc) or pm on github
