@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @cake.name %>
+</p>
+
+<p>
+	<b>Tags</b>
+	<%= @cake.tag_list %>
+</p>
+
+
+<%= link_to 'Edit', edit_cake_path(@cake) %> |
+<%= link_to 'Back', cakes_path %>

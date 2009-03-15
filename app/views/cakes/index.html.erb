@@ -1,0 +1,24 @@
+<h1>Listing cakes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+	<th>Tag No</th>
+  </tr>
+
+<% @cakes.each do |cake| %>
+  <tr>
+    <td><%=h cake.name %></td>
+	<td><%= cake.tag_list.size %></td>
+    <td><%= link_to 'Show', cake %></td>
+    <td><%= link_to 'Edit', edit_cake_path(cake) %></td>
+    <td><%= link_to 'Destroy', cake, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New cake', new_cake_path %>
+
+<h1>Tag Cloud</h1>

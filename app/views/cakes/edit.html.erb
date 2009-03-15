@@ -1,0 +1,11 @@
+<h1>Editing cake</h1>
+
+<% form_for(@cake) do |f| %>
+  <%= render(:partial => "form", :locals => { :f => f } ) %>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @cake %> |
+<%= link_to 'Back', cakes_path %>
