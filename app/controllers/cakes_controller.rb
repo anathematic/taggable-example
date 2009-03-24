@@ -12,6 +12,17 @@ class CakesController < ApplicationController
       format.xml  { render :xml => @cakes }
     end
   end
+  
+  def filter
+    @cakes = Cake.tagged_with(params[:id], :on => :tags)
+    
+    respond_to do |format|
+      format.html { render :action => "index" }
+      format.xml  { render :xml => @cakes }
+    end
+    
+    flash[:notice] = "Fitlering by #{params[:id]}"
+  end
 
   # GET /cakes/1
   # GET /cakes/1.xml

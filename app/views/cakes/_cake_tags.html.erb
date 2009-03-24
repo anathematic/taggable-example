@@ -1,1 +1,1 @@
-<span class="tag_level_<%= cake_tags.count %>"><%= cake_tags.name %> </span>
+<span class="tag_level_<%= cake_tags.count %>"><%= link_to cake_tags.name, filter_cake_path(cake_tags.name) %> </span>

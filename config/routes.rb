@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :cakes
+  map.resources :cakes, :member => { :filter => :any }
 
   # The priority is based upon order of creation: first created -> highest priority.
 
